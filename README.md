@@ -4,11 +4,11 @@ This repository contains the data and the codes to generate all figures in the p
 
 Pellis L, Scarabel F, Stage HB, Overton CE, Chappell LHK, Fearon E, Bennett E, University of Manchester COVID-19 Modelling Group, Lythgoe KA, House TA and Hall I, 
 "Challenges in control of COVID-19: short doubling time and long delay to effect of interventions", Philosophical Transactions of the Royal Society B (2021)
+medRxiv: https://doi.org/10.1101/2020.04.12.20059972
  
-Previous preprints:
+Previous preprint:
 31 March 2020: https://arxiv.org/abs/2004.00117
-11 June 2020: https://www.medrxiv.org/content/10.1101/2020.04.12.20059972v2
-
+(Version 1.0 of code refers to this preprint)
 
 ## Data
 
