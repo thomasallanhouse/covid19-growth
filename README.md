@@ -23,9 +23,9 @@ The data files "IncubationPeriod.xlsx", "HospitalisationDelay_HongKong.xlsx" and
 K.  Sun,  Spreadsheet  of  patient-level  data  until  31.01.2020. https://docs.google.com/spreadsheets/d/1Gb5cyg0fjUtsqh3hl_L-C5A23zIOXmWH5veBklfSHzg/edit?usp=sharing. From K. Sun, J. Chen, C. Viboud, "Early  epidemiological  analysis  of  the  coronavirus  disease  2019  outbreak  based  on  crowdsourced  data: a population-level observational study". The Lancet Digital Health 2, 4 (2020)
 
 In particular:
--- "IncubationPeriod.xlsx" was obtained by filtering on patients who had fixed travel windows in Wuhan prior to symptom onset. These travel dates provided an exposure window. The columns are exposure start, exposure end and onset date. 
--- "HospitalisationDelay_HongKong.xlsx" was obtained by filtering on patients in Hong Kong with known symptom onset dates and hospitalisation dates. The columns are onset date and hospitalisation date. 
--- "HospitalisationDelay_Singapore.xlsx" was obtained by filtering on patients in Singapore with known symptom onset dates and hospitalisation dates. The columns are onset date and hospitalisation date. 
+* "IncubationPeriod.xlsx" was obtained by filtering on patients who had fixed travel windows in Wuhan prior to symptom onset. These travel dates provided an exposure window. The columns are exposure start, exposure end and onset date. 
+* "HospitalisationDelay_HongKong.xlsx" was obtained by filtering on patients in Hong Kong with known symptom onset dates and hospitalisation dates. The columns are onset date and hospitalisation date. 
+* "HospitalisationDelay_Singapore.xlsx" was obtained by filtering on patients in Singapore with known symptom onset dates and hospitalisation dates. The columns are onset date and hospitalisation date. 
 
 In all three files, the data are processed to remove inconsistent dates and replace "0" durations with "0.5".
 
