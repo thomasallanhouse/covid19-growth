@@ -23,7 +23,7 @@ doubt = log(2)./vr; % Doubling time
 R0 = NaN(lr,nprof);
 gentime = NaN(lr,nprof);
 Ip = 7; % Baseline duration of infectious period
-Dp = 1; % Duration of prodromal period: manually change values 0,1,2,3
+Dp = 3; % Duration of prodromal period: manually change values 0,1,2,3
 Ps = 1; % Proportion of symptomatic infections. Try 1 and 0.5
 Fa = 0.5; % Fraction of transmission if asymptomatic
 ninfprofplot = 10; % Plot only some infectivity profiles
@@ -38,13 +38,13 @@ for iprof = 1:nprof
     symptoms = NaN(np,ls);
     switch profiles{iprof}
         case 'SEIR'
-            Em = 4.84-Dp; Ea = 1; Eb = Em/Ea; % Reconstruct parameters a and b from mean
+            Em = 4.85-Dp; Ea = 1; Eb = Em/Ea; % Reconstruct parameters a and b from mean
             ptab(:,1) = sort(random('Gamma',Ea,Eb,[np,1])); % Duration latent period
             Im = 3; Ia = 1; Ib = Im/Ia; % Reconstruct parameters a and b from mean
             ptab(:,3) = random('Gamma',Ia,Ib,[np,1]); % Duration infectious period
             ptab(:,4) = 1; % No further variation in total infectiousness
         case 'TVI' % Gamma-shaped infectivity with mean 2 and std 1.5
-            Em = 4.84-Dp; Es = 2.79; Ea = (Em/Es)^2; Eb = Es^2/Em; % Reconstruct parameters a and b from mean and standard deviation 
+            Em = 4.85-Dp; Es = 2.79; Ea = (Em/Es)^2; Eb = Es^2/Em; % Reconstruct parameters a and b from mean and standard deviation 
             ptab(:,1) = sort(random('Gamma',Ea,Eb,[np,1])); % Duration of latent period
             ptab(:,3) = 7;
             Om = 2; Os = 1.5; Oa = (Om/Os)^2; Ob = Os^2/Om;  % Reconstruct parameters a and b from mean and standard deviation 
@@ -53,7 +53,7 @@ for iprof = 1:nprof
             appintO = (ds*trapz(vO)); vO = vO / appintO; intO = ds*trapz(vO);
             disp(['Original truncation = ',num2str(1-appintO),'; Corrected truncation = ',num2str(1-intO)])
         case 'supspr' % Gamma-shaped infectivity with mean 2 and std 1.5, but variability in total infectivity
-            Em = 4.84-Dp; Es = 2.79; Ea = (Em/Es)^2; Eb = Es^2/Em; % Reconstruct parameters a and b from mean and standard deviation 
+            Em = 4.85-Dp; Es = 2.79; Ea = (Em/Es)^2; Eb = Es^2/Em; % Reconstruct parameters a and b from mean and standard deviation 
             ptab(:,1) = sort(sort(random('Gamma',Ea,Eb,[np,1]))); % Duration of latent period
             ptab(:,3) = Ip;
             Om = 2; Os = 1.5; Oa = (Om/Os)^2; Ob = Os^2/Om; % Reconstruct parameters a and b from mean and standard deviation 
@@ -63,7 +63,7 @@ for iprof = 1:nprof
             appintO = (ds*trapz(vO)); vO = vO / appintO; intO = ds*trapz(vO);
             disp(['Original truncation = ',num2str(1-appintO),'; Corrected truncation = ',num2str(1-intO)])
         case 'TVIlate' % Gamma-shaped infectivity with mean 3 and std 1.5
-            Em = 4.84-Dp; Es = 2.79; Ea = (Em/Es)^2; Eb = Es^2/Em; % Reconstruct parameters a and b from mean and standard deviation 
+            Em = 4.85-Dp; Es = 2.79; Ea = (Em/Es)^2; Eb = Es^2/Em; % Reconstruct parameters a and b from mean and standard deviation 
             ptab(:,1) = sort(random('Gamma',Ea,Eb,[np,1])); % Duration of latent period
             ptab(:,3) = 7;
             Om = 3; Os = 2; Oa = (Om/Os)^2; Ob = Os^2/Om; % Reconstruct parameters a and b from mean and standard deviation 
