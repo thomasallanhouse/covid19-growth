@@ -6,9 +6,8 @@ Pellis L, Scarabel F, Stage HB, Overton CE, Chappell LHK, Fearon E, Bennett E, U
 "Challenges in control of COVID-19: short doubling time and long delay to effect of interventions", Philosophical Transactions of the Royal Society B (2021)
 medRxiv: https://doi.org/10.1101/2020.04.12.20059972
  
-Previous preprint:
-31 March 2020: https://arxiv.org/abs/2004.00117
-(Version 1.0 of code refers to this preprint)
+Developed from original preprint 31 March 2020: https://arxiv.org/abs/2004.00117
+(Version 1.0 of code on this repository refers to this preprint)
 
 ## Data
 
