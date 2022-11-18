@@ -38,3 +38,7 @@ The file "Literature_data.xlsx" contains the filtered list of the literature sea
 
 The codes are available under the MIT licence, see ‘LICENCE’ for details.
 Please cite this manuscript when using the codes. 
+
+## DOI for latest release
+
+[![DOI](https://zenodo.org/badge/251371588.svg)](https://zenodo.org/badge/latestdoi/251371588)
